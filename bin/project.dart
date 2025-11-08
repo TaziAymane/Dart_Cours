@@ -1,21 +1,11 @@
 void main() {
-  Count count1 = Count();
-  count1.addCount();
-  count1.addCount();
-  count1.addCount();
-  count1.addCount();
-  count1.printCount();
-  Count count2 = Count();
-  count2.printCount();
+  Studant.printname("aymane");
 }  
 
-class Count{
-  static int  count = 0 ;
-  printCount(){
-    print("count : $count");
-  }
-  addCount(){
-    count++ ;
+class Studant {
+  static String Text = "Bac+2" ;
+  static printname(name){
+    print("Welcome $name $Text");
   }
 }
 
