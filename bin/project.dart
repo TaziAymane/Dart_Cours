@@ -1,20 +1,43 @@
-import 'calculeMoyyene/calauleMoyyene.dart';
 void main() {
-  Usres user1 = Usres();
-  user1.username = "aymane";
-  user1.password = "1254aymane";
+  Humane h1 = Humane() ;
+  h1.name = "aymane";
+  h1.identite = "SH321654";
+  h1.age = 21 ;
+  // h1.HumaneInformation();
 
-  user1.printName();
+  Studant st1 = Studant();
+  st1.name = "Ahmed";
+  st1.identite = "B321654";
+  st1.age = 22;
+  st1.cin = "B132456";
+  st1.niveau = "Bac+3";
+  st1.moyyeneGeneral = 15.21 ;
+  st1.studantInformation();
 }  
 
-class Usres{
-  String? username ;
-  String? password ;
+class Humane{
+  String? name ;
+  String? identite ;
+  int? age ;
 
-  printName(){
-    print("username : $username \npassword : $password");
+  humaneInformation(){
+    print("Name : $name \nIdentite : $identite \nAge : $age");
   }
+
+  
 }
+
+class Studant extends Humane{
+  String? cin ;
+  String? niveau ;
+  double? moyyeneGeneral ;   
+
+   studantInformation(){
+    humaneInformation();
+    print("CIN : $cin \nNiveau : $niveau \nMoyyene General : $moyyeneGeneral");
+   }
+}
+
 
 
 
