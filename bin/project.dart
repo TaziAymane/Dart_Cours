@@ -1,14 +1,14 @@
-void main() {
-  Data data = Data<String>("20");
+void  main() async{
+  print("one");
+  await Future.delayed(Duration(seconds: 3),(){
+    print('two');
+  });
+  print("three");
+  print("four");
 }
 
 
-class Data<T> {
-  T data ;
-  Data(this.data){
-    print("data : $data");
-  }
-}
+
 
 
 
