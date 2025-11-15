@@ -1,17 +1,15 @@
 void main() {
-  Studant studant = Studant();
-  studant.printName();
-}  
+  Data data = Data<String>("20");
+}
 
-mixin mixinPrint{
-  printName(){
-    print("name");
+
+class Data<T> {
+  T data ;
+  Data(this.data){
+    print("data : $data");
   }
 }
 
-class Studant with mixinPrint {
-
-}
 
 
 
