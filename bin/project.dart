@@ -1,23 +1,7 @@
-void  main() async {
- await getdata().then((val){
-   print("welcom $val");
- });
+void main () async{
+
 }
 
-Future getdata() async {
-  return await Future.delayed(Duration(seconds: 3),(){
-    return "aymane";
-  });
+Stream getData() async*{
+    yield "2";
 }
-
-
-
-
-
-
-
-
-
-
-
-

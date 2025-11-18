@@ -1,8 +1,8 @@
-calculeMoyyene(List numbres){
+void calculeMoyyene(List numbres){
   double somme = 0 ;
-  numbres.forEach((value){
+  for (var value in numbres) {
     somme += value ;
-  });
+  }
   double Moyyene = somme / numbres.length ;
   print(Moyyene);
 }
