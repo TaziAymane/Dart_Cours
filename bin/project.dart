@@ -1,11 +1,12 @@
 import 'dart:async';
 
 void main () async{
-    StreamController streamController = StreamController();
-    Stream stream = streamController.stream;
+DateTime date = DateTime.now();
+print(date.year);
 
-    StreamSubscription strwamSubscription = stream.listen((val){
-        print("Value : $val");
-    });
+// parse date from string to DateTime
+String stringDate = "2025-01-01";
+DateTime parseDate = DateTime.parse(stringDate);
+print(parseDate.day);
 }
 
