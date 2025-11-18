@@ -1,12 +1,12 @@
-import 'dart:async';
-
 void main () async{
-DateTime date = DateTime.now();
-print(date.year);
+    int age = 14 ;
+    print(age.isEvenAndPositive());
 
-// parse date from string to DateTime
-String stringDate = "2025-01-01";
-DateTime parseDate = DateTime.parse(stringDate);
-print(parseDate.day);
+
 }
 
+extension MyExtention on int{
+    isEvenAndPositive(){
+        return this > 0 && this.isEven ;
+    }
+}
